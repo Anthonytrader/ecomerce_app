@@ -1,5 +1,10 @@
 const app = require('./app');
 const sequelize = require('./utils/connection');
+const cors = require('cors');
+require("./models");
+app.use(cors());
+
+
 
 const PORT = process.env.PORT || 8080;
 
